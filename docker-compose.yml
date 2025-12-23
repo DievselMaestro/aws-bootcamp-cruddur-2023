@@ -2,7 +2,7 @@ version: "3.8"
 services:
   backend-flask:
     environment:
-      FRONTEND_URL: "https://3000--019b4b81-904b-7698-b50f-5ff6dec9b7f7.eu-central-1-01.gitpod.dev/"
+      FRONTEND_URL: "https://3000--019b4b81-904b-7698-b50f-5ff6dec9b7f7.eu-central-1-01.gitpod.dev"
       BACKEND_URL: "https://4567--019b4b81-904b-7698-b50f-5ff6dec9b7f7.eu-central-1-01.gitpod.dev"
     build: ./backend-flask
     ports:
