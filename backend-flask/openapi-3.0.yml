@@ -70,23 +70,19 @@ paths:
                 items:
                   $ref: '#/components/schemas/Activity'
 
-    /api/activities/notifications:
-      description: ''
-      parameters: []
-      responses:
-        '200':
-          description: Return an array of activities:
+  /api/activities/notifications:
     get:
-      description: 'Return a feed of activity for all of those that i follow'
+      description: 'Return a feed of activity based on a Notification term'
       tags:
         - activities
       parameters:
-        - name: handle
-          in: path
-          description: Handle (aka Username)
+        - name: term
+          in: query
+          description: Search term used for full text search
           required: true
           schema:
             type: string
+            example: "#100DaysOfCloud"
       responses:
         '200':
           description: Returns an array of activities"
