@@ -6,7 +6,7 @@ class NotificationsActivities:
       'uuid': '68f126b0-1ceb-4a33-88be-d90fa7109eee',
       'handle':  'Christian Fritschi',
       'message': 'Ich bin der beste der aller aller beste',
-      'created_at': (now - timedelta(days=2)).isoformat(),
+      'created_at': (now - timedelta(days=100)).isoformat(),
       'expires_at': (now + timedelta(days=5)).isoformat(),
       'likes_count': 5,
       'replies_count': 1,
@@ -19,7 +19,7 @@ class NotificationsActivities:
         'likes_count': 0,
         'replies_count': 0,
         'reposts_count': 0,
-        'created_at': (now - timedelta(days=2)).isoformat()
+        'created_at': (now - timedelta(days=100)).isoformat()
       }],
     }, 
     ]
